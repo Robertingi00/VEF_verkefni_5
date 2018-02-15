@@ -1,0 +1,110 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+</style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:auto;
+}
+header{
+	background-color: #19242a;
+	position: relative;
+	padding:1em;
+}
+header h1{
+	font-family: 'Bitter', serif;
+	color: white;
+	text-align: center;
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.event{
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: .5em;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+
+}
+.event img{
+	width: 100%;
+
+}
+.event h2{
+	height: 44px;
+}
+.fyrirsogn{
+	margin-bottom: 0;
+	margin-top: 2em; 
+	opacity: .34; 
+}
+.data{
+	margin-top: 8px;
+	height: 1em;
+}
+footer{
+	background-color: #19242a;
+	position: relative;
+	padding:1em;
+	
+}
+footer h5{
+	font-family: 'Bitter', serif;
+	color: white;
+	text-align: center;
+
+}
+/*==== viðmið 37.5 (600px) ====*/ 
+
+
+@media screen and (min-width: 37.5em){
+    body{
+		margin:auto;
+	}
+    .wrapper{
+    	display: grid;
+    	grid-template-columns: repeat(2,1fr);
+
+    }
+    
+}
+/*==== viðmið 48em (760px ====*/
+@media screen and (min-width: 48em){
+  .wrapper{
+    	grid-template-columns: repeat(2,1fr);
+
+    }
+/*==== viðmið 48em (760px ====*/
+@media screen and (min-width: 60em){
+  body{
+		margin:auto;
+		max-width: 60em;
+	}
+  .wrapper{
+    	grid-template-columns: repeat(3,1fr);
+
+    }
+   .event{
+   		text-align: unset;
+    }
+@media screen and (min-width: 80em){
+  body{
+		margin:auto;
+		max-width: 80em;
+	}
+  .wrapper{
+    	grid-template-columns: repeat(3,1fr);
+
+    }
+
+
